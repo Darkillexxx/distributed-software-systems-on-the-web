@@ -1,4 +1,4 @@
-var person = {
+/*var person = {
     name: 'John',
     age: 30
 };
@@ -15,4 +15,21 @@ var employee = {
     department: jobDetails.department
 };
 
-console.log(employee);
+console.log(employee);*/
+const person = {
+    name: 'John',
+    age: 30
+}
+
+const jobDetails = {
+    title: 'Developer',
+    department: 'Engineering'
+}
+
+const employee = {
+    ...person,
+    ...jobDetails
+}
+
+console.log(employee)
+
